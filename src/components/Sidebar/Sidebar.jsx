@@ -1,4 +1,15 @@
 import React from "react";
+import logo from "../../assets/images/Logo.svg";
+import dashboard from "../../assets/images/Dashboard.svg";
+import team from "../../assets/images/user.svg";
+import wallet from "../../assets/images/Wallet.svg";
+import time from "../../assets/images/time.svg";
+import trophy from "../../assets/images/trophy.svg";
+import notification from "../../assets/images/Notification.svg";
+import setting from "../../assets/images/Setting.svg";
+import hire from "../../assets/images/hire.svg";
+import Rectangle from "../../assets/images/Rectangle.svg";
+import down from "../../assets/images/down.svg";
 
 const Sidebar = () => {
   return (
@@ -6,154 +17,73 @@ const Sidebar = () => {
       {/* Logo */}
       <div>
         <div className="flex items-center space-x-3 mb-8">
-          <img
-            src="/logo.png"
-            alt="Logo"
-            className="h-8 w-8"
-          />
-          <div>
-            <h1 className="text-lg font-bold text-gray-800">HUREN</h1>
-            <p className="text-sm text-gray-500">Human Resource</p>
-          </div>
+          <img src={logo} alt="Logo" className="w-[213px] h-[50px]" />
         </div>
 
         {/* Menu */}
         <nav>
           <p className="text-sm text-gray-500 uppercase mb-4">Menu</p>
-          <ul className="space-y-4">
+          <ul className="space-y-2">
             {/* Menu Item */}
-            <li className="flex items-center space-x-3 text-gray-600 hover:text-gray-800 cursor-pointer">
-              <span className="p-2 rounded-md bg-[#F6F9F2] text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 10h16M4 14h16M4 18h16"
-                  />
-                </svg>
-              </span>
-              <span>Home</span>
+            <li className="flex items-center space-x-3 text-[#70747B] hover:text-black cursor-pointer h-14 px-4 rounded-lg hover:bg-gray-100">
+              <img src={dashboard} alt="Dashboard" />
+              <span className="text-base ">Home</span>
             </li>
 
             {/* Team */}
-            <li className="flex items-center space-x-3 text-gray-600 hover:text-gray-800 cursor-pointer">
-              <span className="p-2 rounded-md bg-[#F6F9F2] text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M16 14l-4-4-4 4m4-10v12"
-                  />
-                </svg>
-              </span>
-              <span>Team</span>
+            <li className="flex items-center space-x-3 text-[#70747B] hover:text-black cursor-pointer h-14 px-4 rounded-lg hover:bg-gray-100">
+              <img src={team} alt="Team" />
+              <span className="text-base ">Team</span>
             </li>
 
             {/* Highlighted Menu Item */}
-            <li className="flex items-center space-x-3 bg-[#D5F29F] text-gray-800 font-medium rounded-md px-3 py-2 shadow-md cursor-pointer">
-              <span className="p-2 rounded-md bg-[#00000010]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </span>
-              <span>Hire & Onboard</span>
+            <li className="relative inline-block">
+              <div className="absolute inset-0 bg-black rounded-xl translate-x-2"></div>
+              <button className="relative bg-[#D9F27E] font-medium text-black  rounded-xl px-4 py-4 flex items-center space-x-2 shadow-md h-14">
+                <img src={hire} alt="Hire & Onboard" />
+                <span>Hire & Onboard</span>
+              </button>
             </li>
 
             {/* Dropdown Items */}
-            <li className="flex items-center space-x-3 text-gray-600 hover:text-gray-800 cursor-pointer">
-              <span className="p-2 rounded-md bg-[#F6F9F2] text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 9l6 6 6-6"
-                  />
-                </svg>
-              </span>
-              <span>Payroll</span>
+            <li className="flex items-center space-x-3 text-[#70747B] hover:text-black cursor-pointer h-14 px-4 rounded-lg hover:bg-gray-100">
+              <img src={wallet} alt="Payroll" />
+              <span className="text-base ">Payroll</span>
             </li>
-            <li className="flex items-center space-x-3 text-gray-600 hover:text-gray-800 cursor-pointer">
-              <span className="p-2 rounded-md bg-[#F6F9F2] text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 4v16m8-8H4"
-                  />
-                </svg>
-              </span>
-              <span>Time Tracking</span>
+            <li className="flex items-center space-x-3 text-[#70747B] hover:text-black cursor-pointer h-14 px-4 rounded-lg hover:bg-gray-100">
+              <img src={time} alt=" Tracking" />
+              <span className="text-base ">Time Tracking</span>
             </li>
+            <li className="flex items-center space-x-3 text-[#70747B] hover:text-black cursor-pointer h-14 px-4 rounded-lg hover:bg-gray-100">
+              <img src={trophy} alt="Benefits" />
+              <span className="text-base ">Benefits</span>
+            </li>
+
+            {/* Notifications and Settings */}
+            <div className="pt-6">
+              <li className="flex items-center space-x-3 text-[#70747B] hover:text-black cursor-pointer h-14 px-4 rounded-lg hover:bg-gray-100">
+                <img src={notification} alt="Notifications" />
+                <span className="text-base ">Notifications</span>
+              </li>
+              <li className="flex items-center space-x-3 text-[#70747B] hover:text-black cursor-pointer h-14 px-4 rounded-lg hover:bg-gray-100">
+                <img src={setting} alt="Settings" />
+                <span className="text-base ">Settings</span>
+              </li>
+            </div>
           </ul>
         </nav>
-      </div>
 
-      {/* User Profile */}
-      <div className="bg-[#F6F9F2] rounded-lg p-4 flex items-center space-x-3 shadow-sm">
-        <img
-          src="https://via.placeholder.com/40"
-          alt="User"
-          className="h-10 w-10 rounded-full"
-        />
-        <div>
-          <p className="text-sm font-medium text-gray-800">Ariyan Rooben</p>
-          <p className="text-xs text-gray-500">Web Designer</p>
+        {/* User Profile */}
+        <div className="bg-[#F6F9F2] rounded-lg p-4 flex items-center space-x-3 shadow-sm mt-6">
+          <img src={Rectangle} alt="User" className="h-10 w-10 rounded-full" />
+          <div>
+            <p className="text-sm  text-gray-800">Ariyan Rooben</p>
+            <p className="text-xs text-gray-500">Web Designer</p>
+          </div>
+          <button>
+            <img src={down} alt="Dropdown" />
+          </button>
         </div>
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 text-gray-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 9l6 6 6-6"
-            />
-          </svg>
-        </button>
       </div>
     </aside>
   );

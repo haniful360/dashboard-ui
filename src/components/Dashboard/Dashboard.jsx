@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 
 const Dashboard = () => {
   return (
-    <div className="flex h-screen max-w-[1440px] mx-auto">
+    <div className="flex min-h-screen max-w-[1440px] mx-auto">
       {/* Sidebar */}
      <Sidebar/>
 
