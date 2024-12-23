@@ -12,7 +12,7 @@ const Dashboard = () => {
       <main className="bg-gray-50 w-[1187px]">
         {/* Header */}
       
-        {/* <Header/> */}
+        <Header/>
         {/* Content */}
         
       </main>
