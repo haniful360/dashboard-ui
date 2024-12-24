@@ -1,0 +1,9 @@
+/* Add this in your global CSS file */
+body.dark-mode {
+    background-color: gray;
+    color: white;
+  }
+  body.dark-mode input::placeholder {
+    color: #aaaaaa;
+  }
+  

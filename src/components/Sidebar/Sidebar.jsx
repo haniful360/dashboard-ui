@@ -13,9 +13,9 @@ import down from "../../assets/images/down.svg";
 
 const Sidebar = () => {
   return (
-    <aside className="bg-white w-[253px] min-h-screen shadow-md p-6 flex flex-col justify-between">
+    <aside className="hidden sm:block">
       {/* Logo */}
-      <div>
+      <div className="bg-white w-[253px] min-h-screen shadow-md p-6 flex flex-col justify-between" >
         <div className="flex items-center space-x-3 mb-8">
           <img src={logo} alt="Logo" className="w-[213px] h-[50px]" />
         </div>
