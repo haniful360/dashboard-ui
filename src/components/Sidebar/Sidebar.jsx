@@ -13,7 +13,7 @@ import down from "../../assets/images/down.svg";
 
 const Sidebar = () => {
   return (
-    <aside className="hidden sm:block">
+    <aside className="hidden lg:block">
       {/* Logo */}
       <div className="bg-white w-[253px] min-h-screen shadow-md p-6 flex flex-col justify-between" >
         <div className="flex items-center space-x-3 mb-8">

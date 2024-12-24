@@ -1,6 +1,7 @@
 import searchbar from "../../assets/images/Search.svg";
 import LightIcon from "../svg/LightIcon";
 import moon from "../../assets/header/Moon.svg";
+import sun from "../../assets/header/Sun.svg";
 
 const Header = () => {
   
@@ -19,15 +20,15 @@ const Header = () => {
       {/* Right Actions */}
       <div className="flex items-center space-x-6">
         {/* Light/Dark Toggle */}
-        <div className="flex items-center space-x-2 bg-[#F6F9F2] rounded-md px-2 py-1">
+        <div className="flex items-center gap-4 space-x-2 bg-[#F6F9F2] rounded-md px-2 py-1 lg:w-[213px] lg:h-[48px]">
         
-          <button className="text-sm flex items-center space-x-1 bg-[#D5F29F] text-gray-700 px-2 py-1 rounded-md shadow-sm">
-            <LightIcon />
-            <span>Light</span>
+          <button className="text-sm flex items-center space-x-1 lg:w-[94px] lg:h-[36px] bg-[#D9F27E] text-gray-700 px-2 py-1 rounded-md shadow-sm">
+          <img src={sun} alt="" />
+            <span className="font-medium">Light</span>
           </button>
-          <button className="flex gap-1 text-sm text-gray-600">
+          <button className="flex gap-2 text-sm text-gray-600">
             <img src={moon} alt="" />
-            <span>Dark</span>
+            <span className="font-medium">Dark</span>
           </button>
         </div>
 
