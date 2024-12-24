@@ -3,7 +3,7 @@ import document from "../../assets/main-content/document.svg";
 import user from "../../assets/main-content/user.svg";
 import sms from "../../assets/main-content/sms.svg";
 import circle from "../../assets/main-content/circle.svg";
-import trend from "../../assets/main-content/trend-up.svg";
+import trend from "../../assets/main-content/trendup.svg";
 import exportIcon from "../../assets/main-content/export.svg";
 import HiringTable from "./HiringTable";
 
