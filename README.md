@@ -1,8 +1,17 @@
 # React + Vite
+*Dashboard UI
+#live-link:https://dashboard-ui-csav.vercel.app/
+#code-link:https://github.com/haniful360/dashboard-ui
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run a React project with Vite, follow these steps:
+1. Node.js installed: Ensure you have Node.js installed on your system
 
-Currently, two official plugins are available:
+(i) git clone <repository-url>
+(ii) cd <project-folder>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2.Run the following command in the project directory to install all the dependencies:
+(i) npm install
+
+3. Run the Development Server
+(i) npm run dev
+
