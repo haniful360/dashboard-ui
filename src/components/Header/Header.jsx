@@ -1,12 +1,15 @@
 import searchbar from "../../assets/images/Search.svg";
-import LightIcon from "../svg/LightIcon";
 import moon from "../../assets/header/Moon.svg";
 import sun from "../../assets/header/Sun.svg";
+import user from "../../assets/header/frame.svg";
+import notification from "../../assets/header/Notification.svg"; 
+import profile from "../../assets/header/profile.svg"; 
+import Arrow from "../../assets/header/Arrow-down.svg"; 
 
 const Header = () => {
   
   return (
-    <header className="flex items-center justify-between bg-white h-[100px] p-4 ">
+    <header className="flex items-center justify-between gap-4 bg-white h-[100px] p-4 ">
       {/* Search Input */}
       <div className="flex items-center bg-[#F6F9F2] rounded-md px-4 py-2 lg:w-[533px] lg:h-[48px]">
         <img src={searchbar} alt="" />
@@ -33,12 +36,16 @@ const Header = () => {
         </div>
 
         {/* Notification and Profile */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           {/* Notification Icon */}
-          <div className="relative">
-            <span className="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full px-1">
-              2
+          <div className="relative flex items-center  justify-center lg:w-[44px] lg:h-[44px] rounded-full border-[2px] border-[#A0AEC0]">
+          <img className="p-[10px]" src={notification} alt="" />
+            <span className="absolute top-[-3px] right-[-6px] bg-red-400 text-white text-xs rounded-full px-[6px] py-[1px]">
+              3
             </span>
+          </div>
+          <div className="relative flex items-center justify-center lg:w-[44px] lg:h-[44px] rounded-full border-[2px] border-[#A0AEC0]">
+          <img className="p-[10px]" src={user} alt="" />
           </div>
 
           {/* Profile */}
@@ -48,9 +55,14 @@ const Header = () => {
               <p className="text-xs text-gray-400">New York, USA</p>
             </div>
             <img
-              src="https://via.placeholder.com/36"
+              src={profile}
               alt="Profile"
-              className="h-10 w-10 rounded-full object-cover"
+              className="h-10 w-10 object-cover"
+            />
+            <img
+              src={Arrow}
+              alt="Profile"
+              className=""
             />
           </div>
         </div>
