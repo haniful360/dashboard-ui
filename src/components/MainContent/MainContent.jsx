@@ -48,7 +48,7 @@ const MainContent = () => {
               </p>
             </div>
             <div className="">
-              <button className="flex items-center justify-center gap-2 bg-[#D9F27E] w-[154px] h-[48px] text-white px-4 py-2 rounded-lg shadow">
+              <button className="flex items-center justify-center gap-2 bg-[#D9F27E] hover:bg-[#c0d76e] w-[154px] h-[48px] text-white px-4 py-2 rounded-lg shadow">
                 <img src={exportIcon} alt="" />
                 <span className="text-[#222222] text-[14px] font-medium">
                   Export Report

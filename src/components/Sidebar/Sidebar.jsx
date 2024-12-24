@@ -10,14 +10,17 @@ import setting from "../../assets/images/Setting.svg";
 import hire from "../../assets/images/hire.svg";
 import Rectangle from "../../assets/images/Rectangle.svg";
 import down from "../../assets/images/down.svg";
+import frame from "../../assets/images/frame.png";
 
 const Sidebar = () => {
   return (
     <aside className="hidden lg:block shadow-md">
       {/* Logo */}
-      <div className=" w-[253px] min-h-screen  p-6 flex flex-col justify-between" >
+      <div className=" w-[253px] min-h-screen  p-6 flex flex-col justify-between">
         <div className="flex items-center space-x-3 mb-8">
-          <img src={logo} alt="Logo" className="w-[213px] h-[50px]" />
+          <a href="/">
+            <img src={logo} alt="Logo" className="w-[213px] h-[50px]" />
+          </a>
         </div>
 
         {/* Menu */}
@@ -74,14 +77,30 @@ const Sidebar = () => {
         </nav>
 
         {/* User Profile */}
-        <div className="bg-[#F6F9F2] rounded-lg p-4 flex items-center space-x-3 shadow-sm mt-6">
-          <img src={Rectangle} alt="User" className="h-10 w-10 rounded-full" />
+        <div className="bg-[#F6F9F2] w-[213px] rounded-lg p-4 flex items-center space-x-3 shadow-sm mt-6">
+          <img src={Rectangle} alt="User" className="h-10 w-10 rounded" />
           <div>
             <p className="text-sm  text-gray-800">Ariyan Rooben</p>
             <p className="text-xs text-gray-500">Web Designer</p>
           </div>
           <button>
             <img src={down} alt="Dropdown" />
+          </button>
+        </div>
+
+        <div className="w-[213px] h-[285px] bg-black rounded-lg flex flex-col items-center justify-between p-4 text-center text-white mt-10">
+          <h2 className="text-lg text-[16px] text-[#FFFFFF] font-semibold mt-4">
+            Upgrade to pro for
+            <br />
+            get all features
+          </h2>
+
+          <div className="flex-1 flex items-center justify-center">
+            <img src={frame} alt="Illustration" className="w-24 h-auto" />
+          </div>
+
+          <button className="bg-[#D9F27E] text-black text-sm font-medium py-2 px-4 rounded-md mt-4 hover:bg-[#a4ba53]">
+            Upgrade Now
           </button>
         </div>
       </div>

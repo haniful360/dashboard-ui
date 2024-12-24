@@ -169,9 +169,9 @@ const HiringTable = () => {
                       </span>
                     </div>
                   </td>
-                  <td className="py-4 px-5 flex items-center">
+                  <td className="py-4 px-5 flex items-center justify-end">
                     <div
-                      className={` flex gap-1.5 px-4 py-2.5 rounded text-xs font-medium ${
+                      className={` flex gap-1.5 px-3 py-2 rounded text-xs font-medium ${
                         row.status === "New Hire"
                           ? "bg-[#D9F27E] text-black"
                           : "bg-[#FCCE44] text-white"

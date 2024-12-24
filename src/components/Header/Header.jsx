@@ -38,18 +38,18 @@ const Header = () => {
         {/* Notification and Profile */}
         <div className="flex items-center space-x-6">
           {/* Notification Icon */}
-          <div className="relative flex items-center  justify-center lg:w-[44px] lg:h-[44px] rounded-full border-[2px] border-[#A0AEC0]">
+          <div className="relative flex items-center justify-center lg:w-[44px] lg:h-[44px] rounded-full border-[2px] border-[#A0AEC0] cursor-pointer">
           <img className="p-[10px]" src={notification} alt="" />
             <span className="absolute top-[-3px] right-[-6px] bg-red-400 text-white text-xs rounded-full px-[6px] py-[1px]">
               3
             </span>
           </div>
-          <div className="relative flex items-center justify-center lg:w-[44px] lg:h-[44px] rounded-full border-[2px] border-[#A0AEC0]">
+          <div className="relative flex items-center justify-center lg:w-[44px] lg:h-[44px] rounded-full border-[2px] border-[#A0AEC0] cursor-pointer">
           <img className="p-[10px]" src={user} alt="" />
           </div>
 
           {/* Profile */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 cursor-pointer">
             <div>
               <p className="text-sm font-medium text-gray-700">Benjamin</p>
               <p className="text-xs text-gray-400">New York, USA</p>
