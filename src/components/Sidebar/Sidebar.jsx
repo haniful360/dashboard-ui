@@ -22,7 +22,7 @@ const Sidebar = () => {
 
         {/* Menu */}
         <nav>
-          <p className="text-sm text-gray-500 uppercase mb-4">Menu</p>
+          <p className="text-sm text-gray-500 uppercase mb-4 ml-4">Menu</p>
           <ul className="space-y-2">
             {/* Menu Item */}
             <li className="flex items-center space-x-3 text-[#70747B] hover:text-black cursor-pointer h-14 px-4 rounded-lg hover:bg-gray-100">
